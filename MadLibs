@@ -1,0 +1,74 @@
+using System;
+
+namespace MadLibs
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      /*
+      Mad Libs
+      by Evan Zeigler.
+      */
+
+
+      // Let the user know that the program is starting:
+      Console.WriteLine("Mad Libs Starting Up");
+
+      // Give the Mad Lib a title:
+      string title = "Mad Lib";
+
+      Console.WriteLine(title);
+      // Define user input and variables:
+      Console.Write("Enter a name: ");
+      string name = Console.ReadLine();
+      //adjective input
+      Console.WriteLine("Enter the frist adjective: ");
+      string firstAdjective = Console.ReadLine();
+
+      Console.WriteLine("Enter a second adjective: ");
+      string secondAdjective = Console.ReadLine();
+
+      Console.WriteLine("Enter the last adjective: ");
+      string lastAdjective = Console.ReadLine();
+      //verb input
+      Console.WriteLine("Enter a verb: ");
+      string verb = Console.ReadLine();
+      //noun input
+      Console.WriteLine("Enter the frist noun: ");
+      string fristNoun = Console.ReadLine();
+
+      Console.WriteLine("Enter the last noun: ");
+      string lastNoun = Console.ReadLine();
+      //last inputs
+      Console.WriteLine("Enter an animal: ");
+      string animal = Console.ReadLine();
+
+      Console.WriteLine("Enter a fruit: ");
+      string fruit = Console.ReadLine();
+
+      Console.WriteLine("Enter a food: ");
+      string food = Console.ReadLine();
+      
+      Console.WriteLine("Enter a superhero: ");
+      string superhero = Console.ReadLine();
+      
+      Console.WriteLine("Enter a country: ");
+      string country = Console.ReadLine();
+      
+      Console.WriteLine("Enter a dessert: ");
+      string dessert = Console.ReadLine();
+
+      Console.WriteLine("Enter a year: ");
+      string year = Console.ReadLine();
+      
+      // The template for the story:
+
+      string story = $"This morning {name} woke up feeling {firstAdjective}. 'It is going to be a {secondAdjective} day!' Outside, a bunch of {animal}s were protesting to keep {food} in stores. They began to {verb} to the rhythm of the {fristNoun}, which made all the {fruit}s very {lastAdjective}. Concerned, {name} texted {superhero}, who flew {name} to {country} and dropped {name} in a puddle of frozen {dessert}. {name} woke up in the year {year}, in a world where {lastNoun}s ruled the world.";
+
+      // Print the story:
+      Console.WriteLine(story);
+
+    }
+  }
+}
